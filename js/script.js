@@ -139,11 +139,11 @@ const markValidation = (parentElement, isvalid) => {
 if(isvalid){
     parentElement.classList.add('valid');
     parentElement.classList.remove('not-valid');
-    parentElement.lastElementChild.hidden = true;
+    parentElement.lastElementChild.style.display = 'none';
 } else {
     parentElement.classList.add('not-valid');
     parentElement.classList.remove('valid');
-    parentElement.lastElementChild.hidden = false;
+    parentElement.lastElementChild.style.display = 'block';
 }
 }
 
